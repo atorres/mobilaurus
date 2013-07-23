@@ -1,5 +1,5 @@
 /********
- * Base *
+ * #Base *
  ********/
 
 	/**************************
@@ -65,20 +65,151 @@
 		}
 		
 		body {
-			/* background gradient - can edit here: http://www.colorzilla.com/gradient-editor/#4a4f61+0,778f94+30,bbccc3+76,c3cab6+100;Custom */
-			
-			background: #859B99; /* Old browsers */
+		
+			/* background gradient - can edit here: http://www.colorzilla.com/gradient-editor/#92a5af+0,8fa3a7+30,c6d4cd+76,cdd3c3+100;Custom */	
+			background: #92a5af; /* Old browsers */
 			/* IE9 SVG, needs conditional override of 'filter' to 'none' */
-			background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjNGE0ZjYxIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMzAlIiBzdG9wLWNvbG9yPSIjNzc4Zjk0IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNzYlIiBzdG9wLWNvbG9yPSIjYmJjY2MzIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2MzY2FiNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
-			background: -moz-linear-gradient(-45deg,  #4a4f61 0%, #778f94 30%, #bbccc3 76%, #c3cab6 100%); /* FF3.6+ */
-			background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#4a4f61), color-stop(30%,#778f94), color-stop(76%,#bbccc3), color-stop(100%,#c3cab6)); /* Chrome,Safari4+ */
-			background: -webkit-linear-gradient(-45deg,  #4a4f61 0%,#778f94 30%,#bbccc3 76%,#c3cab6 100%); /* Chrome10+,Safari5.1+ */
-			background: -o-linear-gradient(-45deg,  #4a4f61 0%,#778f94 30%,#bbccc3 76%,#c3cab6 100%); /* Opera 11.10+ */
-			background: -ms-linear-gradient(-45deg,  #4a4f61 0%,#778f94 30%,#bbccc3 76%,#c3cab6 100%); /* IE10+ */
-			background: linear-gradient(135deg,  #4a4f61 0%,#778f94 30%,#bbccc3 76%,#c3cab6 100%); /* W3C */
-			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4a4f61', endColorstr='#c3cab6',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+			background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjOTJhNWFmIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMzAlIiBzdG9wLWNvbG9yPSIjOGZhM2E3IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNzYlIiBzdG9wLWNvbG9yPSIjYzZkNGNkIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2NkZDNjMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+			background: -moz-linear-gradient(-45deg,  #92a5af 0%, #8fa3a7 30%, #c6d4cd 76%, #cdd3c3 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#92a5af), color-stop(30%,#8fa3a7), color-stop(76%,#c6d4cd), color-stop(100%,#cdd3c3)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(-45deg,  #92a5af 0%,#8fa3a7 30%,#c6d4cd 76%,#cdd3c3 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(-45deg,  #92a5af 0%,#8fa3a7 30%,#c6d4cd 76%,#cdd3c3 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(-45deg,  #92a5af 0%,#8fa3a7 30%,#c6d4cd 76%,#cdd3c3 100%); /* IE10+ */
+			background: linear-gradient(135deg,  #92a5af 0%,#8fa3a7 30%,#c6d4cd 76%,#cdd3c3 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#92a5af', endColorstr='#cdd3c3',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+		}
+		
+		a {
+			color: white;
+			font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
 		}
 		
 		
 				 
-		 
+/***********
+ * #Layout *
+ ***********/
+	/************************
+	 * #Layout smartphones  *
+	 * single column        *
+	 ************************/
+			.l-main {
+				width: 70%;
+			}
+			
+			.l-nav {
+				width: 100%;
+			}
+	
+	
+			.l-center {
+	 			text-align: center;
+	 			margin: 0 auto;
+	 		}
+		
+	/*******************************
+	 * #Layout tablets and desktop *
+	 * 2 column layout             *
+	 *******************************/
+		@media screen and (min-width: 480px) {	
+			.l-main {
+				float: left;
+				width: 70%;
+				height: 100%;
+			}
+			
+			.l-nav {
+				float: right;
+				width: 30%;
+				height: 100%;
+			}
+	
+	
+			.l-center {
+	 			text-align: center;
+	 			margin: 0 auto;
+	 		}
+	 	}
+
+ 		
+/***********************
+ * #Nav module         *
+ ***********************/
+	 	header {
+ 			padding-top: 15%;
+ 		}
+ 		
+ 		
+ 		
+ 		.nav-menu {
+ 			padding-top: 10%;
+ 		}
+	
+	/********************************
+	 * #Nav smartphones             *
+	 * render nav as collapsed menu *
+	 ********************************/
+	 
+	 	.logo {
+  			width: 75%;
+ 		}
+	 	
+	
+	
+	/*******************************
+	 * #Nav tablets                *
+	 * render nav links as circles *
+	 *******************************/
+		@media screen and (min-width: 480px) {
+			.nav-link-border {
+				border: 1px solid #3A3D50;
+				width: 5em;
+				height: 5em;
+				line-height: 5em;
+				border-radius: 50%;
+	    		-moz-border-radius: 50%;
+	    		-webkit-border-radius: 50%;
+	    		-khtml-border-radius: 50%;
+	    		background-color: transparent;
+	    		margin-top: 10%;
+	    		transition: all 0.15s ease;
+	    		-webkit-transform: translate3d(0,0,0); /* solves Chrome rendering artifact with transitions */
+			}
+		
+			.nav-link-border:hover {
+				border-color: #384661; 
+				-webkit-box-shadow: inset 0 0 .4em #566B96, 0 0 .4em #566B96;
+				-moz-box-shadow: inset 0 0 .4em #566B96, 0 0 .4em #566B96;
+				box-shadow: inset 0 0 .4em #566B96, 0 0 .4em #566B96;
+				color: #384661;
+			}
+			
+			.nav-link {
+				text-decoration: none;
+				color: #3A3D50;
+				font-size: 1.05em;
+				font-weight: lighter;
+			}
+		
+			.logo {
+	  			width: 12em;
+	 		}
+		}
+		
+		
+	/*******************************
+	 * #Nav desktop                *
+	 * render larger nav links     *
+	 *******************************/		
+		@media screen and (min-width: 800px) {
+			.nav-link-border {
+				width: 6em;
+				height: 6em;
+				line-height: 6em;
+				margin-top: 5%;
+			}
+			
+			.nav-link {
+				font-size: 1.25em;
+			}
+		}
