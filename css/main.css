@@ -82,6 +82,7 @@
 		a {
 			color: white;
 			font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+			cursor: pointer;
 		}
 		
 		
@@ -136,13 +137,14 @@
  * #Nav module         *
  ***********************/
 	 	header {
- 			padding-top: 15%;
+ 			padding-top: 3em;
  		}
  		
  		
  		
  		.nav-menu {
  			padding-top: 10%;
+ 			width: 40%;
  		}
 	
 	/********************************
@@ -171,7 +173,7 @@
 	    		-webkit-border-radius: 50%;
 	    		-khtml-border-radius: 50%;
 	    		background-color: transparent;
-	    		margin-top: 10%;
+	    		margin-top: 1em;
 	    		transition: all 0.15s ease;
 	    		-webkit-transform: translate3d(0,0,0); /* solves Chrome rendering artifact with transitions */
 			}
@@ -206,7 +208,7 @@
 				width: 6em;
 				height: 6em;
 				line-height: 6em;
-				margin-top: 5%;
+				margin-top: 1em;
 			}
 			
 			.nav-link {
