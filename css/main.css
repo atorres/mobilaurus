@@ -95,7 +95,7 @@
 	 * single column        *
 	 ************************/
 			.l-main {
-				width: 70%;
+				width: 100%;				
 			}
 			
 			.l-nav {
@@ -115,7 +115,7 @@
 		@media screen and (min-width: 480px) {	
 			.l-main {
 				float: left;
-				width: 70%;
+				width: 69%;
 				height: 100%;
 			}
 			
@@ -136,34 +136,98 @@
 /***********************
  * #Nav module         *
  ***********************/
-	 	header {
- 			padding-top: 3em;
- 		}
  		
- 		
- 		
- 		.nav-menu {
- 			padding-top: 10%;
- 			width: 40%;
- 		}
 	
 	/********************************
 	 * #Nav smartphones             *
 	 * render nav as collapsed menu *
 	 ********************************/
 	 
+	 	header {
+	 		padding-top: 1em;
+	 		float: left;
+	 		width: 65%;
+	 	}
+	 	
 	 	.logo {
   			width: 75%;
  		}
+ 		
+ 		.nav-mobile-menu {
+ 			float: right;
+ 			width: auto;
+ 			display: inline-block;
+ 			position: static;
+ 		}
+ 		
+ 		.nav-mobile-menu img {
+ 			width: 45%;
+ 			height: auto;
+ 			float: right;
+ 			cursor: pointer;
+ 			margin-top: .5em;
+ 			margin-right: .5em;
+ 		}
 	 	
-	
+	 	.nav-menu {
+	 		display: none;
+			width: 75%;
+			background-color: #181D2E;
+			float: right;
+			margin-top: -4em;
+	 	}
+	 	
+	 	.nav-menu a {
+	 		text-decoration: none;
+	 	}
+	 	
+	 	.nav-link-border {
+	 		padding-top: 1.5em;
+	 		padding-bottom: 1.5em;
+	 		font-size: 2em;
+	 		border-top: .05em solid white;
+	 		font-weight: lighter;
+	 	}
+	 	
+	 	#nav-spacer {
+	 		height: 9em;
+	 	}
+
 	
 	/*******************************
 	 * #Nav tablets                *
 	 * render nav links as circles *
 	 *******************************/
+		
 		@media screen and (min-width: 480px) {
+			.nav-menu {
+		 		display: block;
+		 		padding-top: 10%;
+				width: 40%;
+				display: block;
+		 		background-color: transparent;
+		 		float: none;
+		 		margin-top: 0;
+		 	}
+			
+			.nav-mobile-menu {
+				display: none;
+			}
+		
+			header {
+	 			padding-top: 3em;
+	 			width: 100%;
+	 			float: none;
+	 		}
+			
+			#nav-spacer {
+				display: none;
+			}
+			
 			.nav-link-border {
+				padding-top: 0;
+		 		padding-bottom: 0;
+		 		font-size: 1em;
 				border: 1px solid #3A3D50;
 				width: 5em;
 				height: 5em;
@@ -189,6 +253,7 @@
 			}
 			
 			.nav-link {
+				display: block;
 				text-decoration: none;
 				color: #3A3D50;
 				font-size: 1.05em;
@@ -197,6 +262,7 @@
 		
 			.logo {
 	  			width: 12em;
+	  			max-width: 100%;
 	 		}
 		}
 		
@@ -217,3 +283,4 @@
 				font-size: 1.25em;
 			}
 		}
+		
