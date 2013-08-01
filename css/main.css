@@ -77,6 +77,9 @@
 			background: -ms-linear-gradient(-45deg,  #92a5af 0%,#8fa3a7 30%,#c6d4cd 76%,#cdd3c3 100%); /* IE10+ */
 			background: linear-gradient(135deg,  #92a5af 0%,#8fa3a7 30%,#c6d4cd 76%,#cdd3c3 100%); /* W3C */
 			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#92a5af', endColorstr='#cdd3c3',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+			
+			background-attachment:fixed;
+			height:100%;
 		}
 		
 		a {
@@ -85,6 +88,15 @@
 			cursor: pointer;
 		}
 		
+		#wrapper {
+			height: 99%;
+		}
+		
+		h1, h2 {
+	 		font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+	 		font-weight: lighter;
+	 		color: white;
+	 	}
 		
 				 
 /***********
@@ -96,6 +108,8 @@
 	 ************************/
 			.l-main {
 				width: 100%;				
+				clear: both;
+				padding-bottom: 3em;
 			}
 			
 			.l-nav {
@@ -117,6 +131,8 @@
 				float: left;
 				width: 69%;
 				height: 100%;
+				clear: none;
+				padding-bottom: 0;
 			}
 			
 			.l-nav {
@@ -161,7 +177,7 @@
  		}
  		
  		.nav-mobile-menu img {
- 			width: 45%;
+ 			width: 3em;
  			height: auto;
  			float: right;
  			cursor: pointer;
@@ -174,7 +190,8 @@
 			width: 75%;
 			background-color: #181D2E;
 			float: right;
-			margin-top: -4em;
+			position: absolute;
+			right: 0;
 	 	}
 	 	
 	 	.nav-menu a {
@@ -182,17 +199,13 @@
 	 	}
 	 	
 	 	.nav-link-border {
-	 		padding-top: 1.5em;
-	 		padding-bottom: 1.5em;
-	 		font-size: 2em;
-	 		border-top: .05em solid white;
+	 		padding-top: 1.3em;
+	 		padding-bottom: 1.3em;
+	 		font-size: 1.5em;
+	 		border-top: .1em solid white;
 	 		font-weight: lighter;
 	 	}
 	 	
-	 	#nav-spacer {
-	 		height: 9em;
-	 	}
-
 	
 	/*******************************
 	 * #Nav tablets                *
@@ -204,10 +217,10 @@
 		 		display: block;
 		 		padding-top: 10%;
 				width: 40%;
-				display: block;
 		 		background-color: transparent;
 		 		float: none;
 		 		margin-top: 0;
+		 		position: relative;
 		 	}
 			
 			.nav-mobile-menu {
@@ -219,11 +232,7 @@
 	 			width: 100%;
 	 			float: none;
 	 		}
-			
-			#nav-spacer {
-				display: none;
-			}
-			
+						
 			.nav-link-border {
 				padding-top: 0;
 		 		padding-bottom: 0;
@@ -243,6 +252,11 @@
 	    		behavior: url(PIE.php);
 	    		position: relative;
 			}
+			
+			.active-link {
+				border-color: white;
+				color: white;
+			}
 		
 			.nav-link-border:hover {
 				border-color: #384661; 
@@ -250,6 +264,7 @@
 				-moz-box-shadow: inset 0 0 .45em #566B96, 0 0 .45em #566B96;
 				box-shadow: inset 0 0 .45em #566B96, 0 0 .45em #566B96;
 				color: black;
+				background-color: transparent;
 			}
 			
 			.nav-link {
@@ -283,4 +298,147 @@
 				font-size: 1.25em;
 			}
 		}
+	
+	
 		
+/************************************************
+ * #Clearfix module: 							
+ *												
+ * Apply the .clearfix class to any parent		
+ * element that is collapsing because it 		
+ * contains only floated elements 				
+ ************************************************/
+
+		.clearfix:before, .clearfix:after {
+			content: "";
+			display: table;
+		}
+		
+		.clearfix:after {
+			clear: both;
+		}
+		
+		.clearfix {
+			*zoom: 1;
+		}
+		
+		
+
+/***********************
+ * #Content module     *
+ ***********************/
+	/********************************
+	 * #Content smartphones         *
+	 * render nav as collapsed menu *
+	 ********************************/
+ 		h1 {
+ 			text-align: left;
+ 			font-size: 3em;
+ 		}
+ 		
+ 		.content {
+ 			width: 85%;
+ 			padding-top: 2em;
+ 			text-align: left;
+ 		}
+ 		
+ 		.text-section {
+ 			margin-top: 4em;
+ 		}
+ 		
+ 		.text-box {
+	 		font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+	 		color: white;
+	 		font-weight: lighter;
+	 		background-color: #5A6B6D;
+			background-color: rgba(0, 0, 0, 0.2);
+			-webkit-border-radius: .3em;
+			-moz-border-radius: .3em;
+			border-radius: .3em;
+			padding: 1.2em;
+			text-align: left;
+			line-height: 2em;
+			behavior: url(PIE.php);
+			position: relative;
+			clear: left;
+			width: 100%;
+			box-sizing: border-box;
+	 	}
+	 	
+	 	.white-text-divider {
+	 		border-top: 1px solid white;
+	 	}
+	 	
+	 	h2 {
+	 		font-size: 1.75em;
+	 		padding-top: .4em;
+	 		padding-bottom: .4em;
+	 	}
+	 	
+	 	.text-box a {
+	 		font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+	 	}
+	 	
+ 	/*******************************
+	 * #Content tablets            *
+	 * render nav links as circles *
+	 *******************************/
+	 @media screen and (min-width: 480px) {
+	 	h1 {
+	 		font-size: 4em;	
+	 	}
+	 	
+	 	h2 {
+	 		font-size: 2em;
+	 		float: left;
+			padding-top: .4em;
+			padding-bottom: .4em;
+	 	}
+	 	 	
+	 	.content {
+	 		width: 80%;
+	 		position: relative;
+	 		left: 2%;
+	 		padding-top: 2.5em;
+	 		padding-bottom: 2em;
+	 	}
+	 		
+	 	.text-section {
+	 		width: 100%;
+	 		margin-top: 6em;
+	 		clear: both; 	
+	 	}
+	 	
+	 }
+	 
+	 
+	/*******************************
+	 * #Content desktop            *
+	 * render larger nav links     *
+	 *******************************/
+	 @media screen and (min-width: 800px) {
+	 	.text-box {
+	 		float: right;
+	 		clear: none;
+	 		width: 62%;
+	 	}	
+	 	
+	 	h1 {
+	 		font-size: 4.5em;
+	 	}
+	 	
+	 	.h1-line2 {
+	 		margin-left: 30%;
+	 	}
+	 	
+	 	.h1-line3 {
+	 		margin-left: 40%;
+	 		min-width: 5em;	 		
+	 	}
+	 	
+	 	.h1-line4 {
+	 		text-align: right;
+	 	}
+	 }
+	 
+	 
