@@ -54,15 +54,6 @@
 				event.stopPropagation();
 				
 			});		
-			
-			/* clicking outside the menu in the document will hide the menu  */
-			$("#wrapper").click(function(event) {
-				if(isMenuActive) {
-					$(".nav-menu").slideToggle("fast");
-					isMenuActive = !isMenuActive;
-				} 
-			});
-
 		});
 		
 	</script>
