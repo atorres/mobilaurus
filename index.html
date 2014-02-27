@@ -47,13 +47,24 @@
 				
 				event.stopPropagation(); /* prevent click event from bubbling up dom tree and activating document click handler to hide menu */
 				
-				isMenuActive = !isMenuActive;				
+				isMenuActive = !isMenuActive;
+				
+				$("#lightbox").toggle();				
 			});
 			
 			$(".nav-menu").click(function(event){
 				event.stopPropagation();
 				
-			});		
+			});	
+			
+			/* clicking outside the menu (i.e. clicking the lightbox) will hide the menu  */
+			$("#lightbox").click(function(event) {
+				$(".nav-menu").slideToggle("fast");
+				$("#lightbox").toggle();
+				if(isMenuActive) {
+					isMenuActive = !isMenuActive;
+				} 
+			});	
 		});
 		
 	</script>
@@ -63,6 +74,9 @@
 </head>
 
 <body class="gradient">
+
+<div id="lightbox"></div>
+
 <div id="wrapper">
 	<div class="l-nav">
 		<header>

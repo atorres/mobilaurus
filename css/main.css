@@ -209,6 +209,18 @@
 	 		font-weight: lighter;
 	 	}
 	 	
+	 	#lightbox {
+	 		display: none;
+	 		background-color: gray;
+	 		float: left;
+	 		height: 100%;
+	 		width: 100%;
+	 		z-index: 100;
+	 		position: fixed;
+	 		opacity:0.75;
+	 		filter:alpha(opacity=75); /* For IE8 and earlier */
+	 	}
+	 	
 	
 	/*******************************
 	 * #Nav tablets                *
@@ -283,6 +295,11 @@
 				width: 85%;
 	  			max-width: 75%;
 	 		}
+	 		
+	 		#lightbox {
+				height: 0;
+				width: 0;
+			}
 		}
 		
 		
